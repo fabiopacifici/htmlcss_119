@@ -1,21 +1,48 @@
-body {
+/* *
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body
+{
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
-
 /* Header */
-#site_header{
+#site_header
+{
   background-color: #edececFF;
   border-bottom: 2px solid #e5c07cFF;
   text-align: center;
 }
 
-#profile_image {
+#profile_image
+{
   width: 200px;
+  border-radius: 50%;
 }
 
-
 /* Main */
-h2 {
+h2
+{
   color: #e5c07cFF;
+}
+
+h3
+{
+  font-style: italic;
+}
+
+#site_footer
+{
+  border-top: 2px solid #e5c07cFF;
+}
+
+.container
+{
+  width: 1200px;
+  margin: auto;
 }
