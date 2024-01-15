@@ -1,0 +1,46 @@
+/* 🤓 to select ids use # 
+
+you can use and id only once.
+*/
+
+/* #site_header {
+  property:value;
+} */
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+#site_header
+{
+  color: pink;
+  background-color: blueviolet;
+}
+
+#site_main
+{
+  background-color: red;
+}
+
+
+/* 🤓 to select classes we use a: . 
+
+classes can be used multiple times
+
+*/
+
+.bot {
+  background-color: cadetblue;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  border: 1px solid black;
+
+}
+
+
+div {
+  color: red;
+  border: 2px dashed rgba(179, 66, 85, 0.598);
+  
+}
