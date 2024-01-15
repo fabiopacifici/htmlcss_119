@@ -1,0 +1,15 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Header */
+#site_header{
+  background-color: #edececFF;
+  border-bottom: 2px solid #e5c07cFF;
+  text-align: center;
+}
+
+#profile_image {
+  width: 200px;
+}
