@@ -14,6 +14,9 @@ body
   margin: 0;
 }
 
+ul {
+  padding-left: 1rem;
+}
 /* Advanced css selectors 
 
 .debug #site_header{
@@ -77,4 +80,12 @@ h1
 .date
 {
   font-size: 0.9rem;
+}
+
+.images {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.caption {
+  font: 0.9rem;
 }
