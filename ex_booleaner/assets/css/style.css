@@ -1,4 +1,4 @@
-/* Common  */
+/* #region Common  */
 :root
 {
   --bool-primary: rgba(77, 160, 254, 1);
@@ -32,9 +32,9 @@ table{
 th {
   text-align: left;
 }
+/* #endregion Common  */
 
-
-/* Utilities */
+/* #region Utilities */
 .w-50 {
   width: 50%;
 }
@@ -46,6 +46,7 @@ th {
 .bg-secondary {
   background-color: var(--bool-secondary);
 }
+/* #endregion Utilities */
 
 /* Advanced css selectors 
 
@@ -66,7 +67,7 @@ th {
   height: 200px;
 }*/
 
-/* Header */
+/* #region Header */
 
 #site_header
 {
@@ -82,15 +83,16 @@ th {
 {
   width: 180px;
 }
+/* #endregion Header */
 
-/* Main */
+/* #region Main */
 
 #site_main
 {
   padding-left: 0.5rem;
 }
 
-
+/* article header */
 .metadata
 {
   color: var(--bool-light)
@@ -115,6 +117,8 @@ th {
   font: 0.9rem;
 }
 
+
+/* Related Articles */
 #monitor {
   background-image: url('../img/monitor.jpg');
   background-repeat: no-repeat;
@@ -136,3 +140,5 @@ th {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+/* #endregion Main */
