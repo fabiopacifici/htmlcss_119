@@ -7,3 +7,42 @@
   --bool-lighter: rgba(255, 255, 255, 1);
 
 }
+
+body {
+  margin: 0;
+}
+
+/* Advanced css selectors 
+
+.debug #site_header{
+  background-color: red;
+  height: 100px;
+}
+
+.debug #site_main
+{
+  background-color: blue;
+  height: 600px;
+}
+
+.debug #site_footer
+{
+  background-color: purple;
+  height: 200px;
+}*/
+
+
+/* Header */
+
+#site_header {
+  background-color: var(--bool-primary);
+  background-image: url("../img/pattern.png");
+  background-size: 293px;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.logo {
+  width: 180px;
+}
