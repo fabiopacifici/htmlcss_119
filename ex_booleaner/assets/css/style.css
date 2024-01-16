@@ -1,0 +1,9 @@
+:root{
+  --bool-primary: rgba(77, 160, 254, 1);
+  --bool-secondary: rgba(179, 231, 242, 1);
+  --bool-accent: rgba(254, 255, 2, 1);
+  --bool-dark: rgba(1, 0, 1, 1);
+  --bool-light: rgba(145, 144, 145, 1);
+  --bool-lighter: rgba(255, 255, 255, 1);
+
+}
