@@ -1,4 +1,5 @@
-:root{
+:root
+{
   --bool-primary: rgba(77, 160, 254, 1);
   --bool-secondary: rgba(179, 231, 242, 1);
   --bool-accent: rgba(254, 255, 2, 1);
@@ -8,7 +9,8 @@
 
 }
 
-body {
+body
+{
   margin: 0;
 }
 
@@ -31,10 +33,10 @@ body {
   height: 200px;
 }*/
 
-
 /* Header */
 
-#site_header {
+#site_header
+{
   background-color: var(--bool-primary);
   background-image: url("../img/pattern.png");
   background-size: 293px;
@@ -43,6 +45,36 @@ body {
   padding-left: 0.5rem;
 }
 
-.logo {
+.logo
+{
   width: 180px;
+}
+
+/* Main */
+
+#site_main
+{
+  padding-left: 0.5rem;
+}
+
+h1
+{
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.metadata
+{
+  color: var(--bool-light)
+}
+
+.author
+{
+  text-decoration: none;
+  color: var(--bool-primary)
+}
+
+.date
+{
+  font-size: 0.9rem;
 }
