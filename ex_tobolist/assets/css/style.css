@@ -1,0 +1,18 @@
+:root{
+  --tobo-dark : #051831FF;
+  --tobo-light: #D3D6DB;
+  --tobo-page-bg: #f6f8f9FF;
+  --tobo-ligher: #ffffffFF;
+  --tobo-primary: #46ADF0;
+  --tobo-goals-tag-bg: #9c73e5FF;
+  --tobo-recruiting-tag-bg: #64C1A8;
+  --tobo-sales-tag-bg: #B0C926;
+  --tobo-mobile-tag-bg: #ed5f54FF;
+  --tobo-website-tag-bg: #D963A0;
+  --tobo-danger: #ED5F54;
+  
+}
+
+body {
+  background-color: var(--tobo-page-bg);
+}
