@@ -1,3 +1,4 @@
+/* #region Common */
 :root{
   --tobo-dark : #051831FF;
   --tobo-light: #D3D6DB;
@@ -13,6 +14,34 @@
   
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
   background-color: var(--tobo-page-bg);
+  font-family: 'Roboto', sans-serif;
 }
+
+/* #endregion Common */
+
+
+/* #region Header */
+
+#site_header{
+  background-color: var(--tobo-ligher);
+  box-shadow: 0 0 5px var(--tobo-light);
+  padding: 0.5rem 1rem;
+}
+.logo_img {
+  vertical-align: middle;
+}
+.logo_text {
+  font-size: 2rem;
+  vertical-align: middle;
+}
+
+/* #endregion Header */
