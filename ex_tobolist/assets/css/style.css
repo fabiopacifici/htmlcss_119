@@ -1,6 +1,7 @@
 /* #region Common */
-:root{
-  --tobo-dark : #051831FF;
+:root
+{
+  --tobo-dark: #051831FF;
   --tobo-light: #D3D6DB;
   --tobo-page-bg: #f6f8f9FF;
   --tobo-ligher: #ffffffFF;
@@ -11,37 +12,94 @@
   --tobo-mobile-tag-bg: #ed5f54FF;
   --tobo-website-tag-bg: #D963A0;
   --tobo-danger: #ED5F54;
-  
+
 }
 
-*{
+*
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-body {
+body
+{
   background-color: var(--tobo-page-bg);
   font-family: 'Roboto', sans-serif;
 }
 
 /* #endregion Common */
 
+/* #region Utilities */
+
+.container
+{
+  width: 80%;
+  margin: auto;
+}
+
+.card
+{
+  background-color: var(--tobo-ligher);
+  margin: 2rem 0;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 10px var(--tobo-light);
+}
+
+.btn
+{
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: none;
+}
+
+.btn-primary
+{
+  background-color: var(--tobo-primary);
+  border: 1px solid var(--tobo-primary);
+  color: var(--tobo-ligher);
+}
+
+.btn-outline
+{
+  border: 1px solid var(--tobo-light);
+  color: var(--tobo-light);
+}
+
+/* #endregion Utilities */
 
 /* #region Header */
 
-#site_header{
+#site_header
+{
   background-color: var(--tobo-ligher);
   box-shadow: 0 0 5px var(--tobo-light);
   padding: 0.5rem 1rem;
 }
-.logo_img {
+
+.logo_img
+{
   vertical-align: middle;
 }
-.logo_text {
+
+.logo_text
+{
   font-size: 2rem;
   vertical-align: middle;
 }
 
 /* #endregion Header */
+
+/* Main */
+.top
+{
+  padding: 1rem 2rem;
+  border-bottom: 4px solid var(--tobo-page-bg);
+}
+
+.bottom
+{
+  padding: 1rem 2rem;
+}
