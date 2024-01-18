@@ -1,0 +1,41 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header
+{
+  background-color: #ededed;
+  padding: 0.25rem 0;
+
+}
+
+nav
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ul
+{
+  list-style: none;
+  display: flex;
+}
+
+li
+{
+  padding: 0.25rem;
+}
+
+.banner
+{
+  background-color: lightcyan;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
