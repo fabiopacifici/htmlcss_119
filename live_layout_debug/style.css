@@ -1,0 +1,45 @@
+ .debug header
+ {
+   height: 100px;
+ }
+
+ .debug main
+ {
+   height: 600px;
+   background-color: red;
+ }
+
+ .debug aside
+ {
+   background-color: rebeccapurple;
+ }
+
+ .debug footer
+ {
+   height: 200px;
+ }
+
+ header
+ {
+   background-color: paleturquoise;
+ }
+
+ .flex-container
+ {
+   display: flex;
+ }
+
+ main
+ {
+   flex-grow: 3;
+ }
+
+ aside
+ {
+   flex-grow: 1;
+ }
+
+ footer
+ {
+   background-color: darkblue;
+ }
