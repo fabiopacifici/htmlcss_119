@@ -1,0 +1,10 @@
+/* #region Common */
+
+:root{
+	--discord-primary: rgba(48, 97, 225, 1);
+	--discord-dark: rgba(34, 39, 43, 1);
+	--discord-light: rgba(246, 246, 246, 1);
+}
+
+/* #endregion Common */
+
