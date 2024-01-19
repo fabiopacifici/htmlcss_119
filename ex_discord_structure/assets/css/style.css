@@ -4,7 +4,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	border: 1px dashed black; /* Debug only - REMOVE */
+	border: 1px dashed black;
+	/* Debug only - REMOVE */
 }
 
 :root
@@ -20,11 +21,12 @@
 	width: 80%;
 	max-width: 1200px;
 	margin: auto;
+	height: 100%;
 }
 
 .container-small
 {
-	
+
 	width: 60%;
 	max-width: 900px;
 	margin: 2rem auto;
@@ -35,11 +37,23 @@
 	display: flex;
 }
 
+.col-60
+{
+	width: 60%;
+
+}
+
+.col-40
+{
+	width: 40%;
+}
+
 /* #endregion Common */
 
 /* #region Debug */
 
-.debug .container-small {
+.debug .container-small
+{
 	height: 300px;
 	background-color: green;
 }
@@ -58,6 +72,7 @@
 {
 	height: 300px;
 }
+
 .debug .jumbotron
 {
 	height: 450px;
@@ -72,15 +87,26 @@
 {
 	height: 350px;
 }
+
 .debug .fandom
 {
 	height: 350px;
 }
 
-.debug .keep_in_touch{
+.debug .keep_in_touch
+{
 	height: 450px;
 }
 
+
+.debug .col-60 {
+	height: 340px;
+}
+
+
+.debug .col-40 {
+	height: 340px;
+}
 /* #endregion Debug */
 
 /* #region Header */
@@ -127,11 +153,13 @@ li
 	background-color: var(--discord-light);
 }
 
-.jumbotron {
+.jumbotron
+{
 	background-color: var(--discord-primary);
 }
 
-.invite_only{
+.invite_only
+{
 	background-color: var(--discord-lighter);
 }
 
@@ -139,10 +167,12 @@ li
 {
 	background-color: var(--discord-light);
 }
+
 .fandom
 {
 	background-color: var(--discord-lighter);
 }
+
 .keep_in_touch
 {
 	background-color: var(--discord-light);
