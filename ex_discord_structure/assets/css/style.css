@@ -1,6 +1,13 @@
 /* #region Common */
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
-:root{
+:root
+{
 	--discord-primary: rgba(48, 97, 225, 1);
 	--discord-dark: rgba(34, 39, 43, 1);
 	--discord-light: rgba(246, 246, 246, 1);
@@ -8,3 +15,43 @@
 
 /* #endregion Common */
 
+.debug #site_header
+{
+	height: 100px;
+}
+.debug #site_main
+{
+	height: 600px;
+}
+
+.debug #site_footer
+{
+	height: 300px;
+}
+
+/* #region Header */
+#site_header
+{
+	background-color: var(--discord-primary);
+}
+
+/* #endregion Header */
+
+
+/* #region main */
+#site_main
+{
+	background-color: var(--discord-light);
+}
+
+/* #endregion main */
+
+
+
+/* #region footer */
+#site_footer
+{
+	background-color: var(--discord-dark);
+}
+
+/* #endregion footer */
