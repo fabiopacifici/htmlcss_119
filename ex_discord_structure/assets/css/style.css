@@ -13,15 +13,30 @@
 	--discord-light: rgba(246, 246, 246, 1);
 }
 
+.container
+{
+	width: 80%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.d-flex
+{
+	display: flex;
+}
+
 /* #endregion Common */
+
+/* #region Debug */
 
 .debug #site_header
 {
-	height: 100px;
+	/* height: 100px; */
 }
+
 .debug #site_main
 {
-	height: 600px;
+	/* 	height: 600px; */
 }
 
 .debug #site_footer
@@ -29,14 +44,45 @@
 	height: 300px;
 }
 
+/* #endregion Debug */
+
 /* #region Header */
 #site_header
 {
 	background-color: var(--discord-primary);
 }
 
-/* #endregion Header */
+nav
+{
+	display: flex;
+	align-items: center;
+}
 
+.logo
+{
+	flex-grow: 1;
+}
+
+.main_menu
+{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem
+}
+
+li
+{
+	padding: 0.25rem 0.75rem;
+}
+
+.actions
+{
+	flex-grow: 1;
+	text-align: end;
+}
+
+/* #endregion Header */
 
 /* #region main */
 #site_main
@@ -45,8 +91,6 @@
 }
 
 /* #endregion main */
-
-
 
 /* #region footer */
 #site_footer
