@@ -36,6 +36,9 @@
 {
 	display: flex;
 }
+.justify-content-beetween {
+	justify-content: space-between;
+}
 
 .col-60
 {
@@ -184,6 +187,7 @@ li
 #site_footer
 {
 	background-color: var(--discord-dark);
+	color: var(--discord-lighter);
 }
 
 /* #endregion footer */
