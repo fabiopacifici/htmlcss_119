@@ -1,0 +1,134 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px dashed;
+}
+
+:root
+{
+  --drop-secondary: #b4d0e7;
+  --drop-lighter: white;
+  --drop-dark: black;
+}
+
+.container
+{
+  width: 80%;
+  max-width: 1440px;
+  margin: auto;
+}
+.container-sm
+{
+  width: 70%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+[class^="col-"]
+{
+  padding: 1rem;
+}
+
+.col-4 {
+  width: calc((100% / 12) * 4);
+}
+.col-8
+{
+  width: calc((100% / 12) * 8);
+}
+.col-12 {
+  width: 100%;
+}
+
+
+
+/* Debug */
+
+.debug .container, .debug .container-sm
+{
+  min-height: 300px;
+
+}
+.debug [class^="col-"]{
+  min-height: 300px;
+  background-color: red;
+}
+.debug section {
+  margin: 1rem 0;
+  min-height: 300px;
+}
+
+.debug footer {
+  min-height: 300px;
+}
+
+/* Header */
+
+header
+{
+  background-color: var(--drop-lighter);
+
+  & > nav
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 1rem;
+  }
+}
+
+header > nav > .left,
+header > nav > .right
+{
+  flex-grow: 1;
+}
+
+
+/* Main */
+.jumbotron
+{
+  background-color: var(--drop-secondary);
+  height: 450px;
+}
+
+.teams_logo {
+  display: flex;
+}
+
+.teams_logo > .left,
+.teams_logo > .center,
+.teams_logo > .right {
+  flex-grow: 1;
+  aspect-ratio: 1;
+}
+
+.call_to_action {
+  background-color: var(--drop-secondary);
+}
+
+/* Footer */
+
+#site_footer {
+  background-color: var(--drop-dark);
+  color: var(--drop-lighter);
+
+  & .top {
+    display: flex;
+
+    & > .item {
+      flex-grow: 1;
+      min-height: 200px;
+    }
+  }
+
+
+}

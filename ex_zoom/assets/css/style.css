@@ -1,0 +1,165 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  background: #000;
+  overflow: hidden;
+}
+
+img
+{
+  max-width: 100%;
+}
+
+:root
+{
+  --zoom-darkest: black;
+  --zoom-darker: #222323;
+  --zoom-dark: #4b4a4b;
+  --zoom-dark-transparent: #b6b6b675;
+  --zoom-success: #4bc302;
+  --zoom-danger: red;
+  --zoom-lighter: white;
+}
+
+/* Debug */
+.debug header
+{
+
+  background-color: red;
+}
+
+.debug main
+{
+  background-color: #4bc302;
+}
+
+/* Utilities */
+.btn
+{
+  background-color: var(--zoom-dark);
+  color: var(--zoom-lighter);
+  padding: 0.25rem 0.5rem;
+  border-style: none;
+  border-radius: 0.25rem;
+}
+
+.text-center
+{
+  text-align: center;
+}
+
+.wrapper
+{
+  height: 100vh;
+}
+
+/* Header */
+header
+{
+  height: 50px;
+  text-align: end;
+  line-height: 50px;
+}
+
+/* Main */
+main
+{
+  height: calc(100vh - 130px);
+  overflow-y: auto;
+}
+
+.partecipants
+{
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1850px;
+  width: 90%;
+  margin: auto;
+  gap: 10px;
+}
+
+.partecipant
+{
+  position: relative;
+  width: 250px;
+  height: 150px;
+}
+
+.partecipant_profile_image
+{
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.name
+{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: var(--zoom-dark-transparent);
+  color: var(--zoom-lighter);
+}
+
+/* Footer */
+
+footer, .left, .icon, .center {
+  display: flex;
+}
+
+footer
+{
+  color: var(--zoom-lighter);
+  background-color: var(--zoom-darker);
+  height: 80px;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.left
+{
+  flex-grow: 1;
+  gap: 0.5rem
+}
+
+.icon
+{
+  align-items: center;
+}
+
+.center
+{
+  flex-grow: 3;
+  text-align: center;
+  justify-content: center;
+  gap: 0.5rem
+}
+
+.right
+{
+  flex-grow: 1;
+  text-align: end;
+  height: 100%;
+}
+
+.end_meeting
+{
+  display: inline-block;
+  height: 100%;
+  background: gray;
+  line-height: 80px;
+  padding: 0 0.5rem;
+  color: red;
+}
