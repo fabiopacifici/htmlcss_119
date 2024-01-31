@@ -1,0 +1,130 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  background-color: #ededed;
+}
+
+.container
+{
+  width: 80%;
+  max-width: 540px;
+  margin: auto;
+}
+
+.row
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+[class^="column"]
+{
+  padding: 1rem;
+}
+
+.column
+{
+  width: 100%;
+}
+
+img
+{
+  max-width: 100%;
+}
+
+/* Header  */
+
+header
+{
+  background-color: white;
+  padding: 0.5rem 0;
+}
+
+nav
+{
+  display: flex;
+}
+
+.logo
+{
+  margin-bottom: 1rem;
+  text-align: center;
+
+  & > img
+  {
+    border-radius: 50%;
+  }
+}
+
+.main-menu
+{
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+/* Footer */
+footer
+{
+  background-color: black;
+  color: white;
+  padding: 2rem 0;
+
+  & h3
+  {
+    margin-bottom: 1rem;
+  }
+
+  & ul
+  {
+    list-style: none;
+  }
+
+  & a
+  {
+    text-decoration: none;
+  }
+}
+
+/* Mq */
+@media screen and (min-width:568px)
+{
+  .column
+  {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px)
+{
+  .container
+  {
+    max-width: 720px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px)
+{
+
+  .container
+  {
+    max-width: 920px;
+  }
+
+  .column
+  {
+    width: calc(100% / 3);
+  }
+}

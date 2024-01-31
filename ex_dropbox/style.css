@@ -5,7 +5,9 @@
   box-sizing: border-box;
   border: 1px dashed;
 }
-
+body {
+  min-width: 1440px;
+}
 :root
 {
   --drop-secondary: #b4d0e7;
@@ -19,6 +21,7 @@
   max-width: 1440px;
   margin: auto;
 }
+
 .container-sm
 {
   width: 70%;
@@ -26,7 +29,8 @@
   margin: auto;
 }
 
-.row {
+.row
+{
   display: flex;
   flex-wrap: wrap;
   margin: 0 -1rem;
@@ -37,36 +41,44 @@
   padding: 1rem;
 }
 
-.col-4 {
+.col-4
+{
   width: calc((100% / 12) * 4);
 }
+
 .col-8
 {
   width: calc((100% / 12) * 8);
 }
-.col-12 {
+
+.col-12
+{
   width: 100%;
 }
 
-
-
 /* Debug */
 
-.debug .container, .debug .container-sm
+.debug .container,
+.debug .container-sm
 {
   min-height: 300px;
 
 }
-.debug [class^="col-"]{
+
+.debug [class^="col-"]
+{
   min-height: 300px;
   background-color: red;
 }
-.debug section {
+
+.debug section
+{
   margin: 1rem 0;
   min-height: 300px;
 }
 
-.debug footer {
+.debug footer
+{
   min-height: 300px;
 }
 
@@ -92,7 +104,6 @@ header > nav > .right
   flex-grow: 1;
 }
 
-
 /* Main */
 .jumbotron
 {
@@ -100,35 +111,95 @@ header > nav > .right
   height: 450px;
 }
 
-.teams_logo {
+.teams_logo
+{
   display: flex;
 }
 
 .teams_logo > .left,
 .teams_logo > .center,
-.teams_logo > .right {
+.teams_logo > .right
+{
   flex-grow: 1;
   aspect-ratio: 1;
 }
 
-.call_to_action {
+.call_to_action
+{
   background-color: var(--drop-secondary);
 }
 
 /* Footer */
 
-#site_footer {
+#site_footer
+{
   background-color: var(--drop-dark);
   color: var(--drop-lighter);
 
-  & .top {
+  & .top
+  {
     display: flex;
 
-    & > .item {
+    & > .item
+    {
       flex-grow: 1;
       min-height: 200px;
     }
   }
-
-
 }
+
+/* Css Transition */
+
+.login
+{
+  background-color: var(--drop-secondary);
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: all 1500ms;
+  position: relative;
+}
+
+.login:hover
+{
+  background-color: var(--drop-dark);
+  color: var(--drop-lighter);
+}
+
+/* Animations
+.login i
+{
+  position: absolute;
+  top: 3px;
+  left: 0;
+  animation-name: jump;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jump
+{
+  form
+  {
+    top: 5px;
+    left: 0;
+  }
+
+  to
+  {
+    top: 0;
+    left: 0;
+  }
+} */
+
+/* 
+@keyframes jump
+{
+  from
+  {}
+
+  to
+  {}
+}
+
+*/

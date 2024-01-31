@@ -1,0 +1,105 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+
+  /* non adattivo width: 900px; */
+
+  width: 80%;
+  max-width: 400px;
+
+  margin: 0 auto;
+  background-color: palegreen;
+}
+
+h1 {
+  color: purple;
+  font-size: 24px;
+  padding: 2rem;
+}
+
+
+
+/* Media query - mobile first (min-width) */
+@media screen and (min-width: 768px) {
+  
+  .container {
+    background-color: paleturquoise;
+    max-width: 740px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+
+}
+
+
+
+@media screen and (min-width: 1024px){
+  .container {
+    background-color: palevioletred;
+    max-width: 1176px;
+  }
+
+  h1 {
+    font-size: 32px;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 1440px)
+{
+  .container
+  {
+    background-color: red;
+    max-width: 1400px;
+  }
+
+  h1
+  {
+    font-size: 32px;
+    color: black;
+  }
+}
+
+/* Media query - desktop first (max-width) */
+
+@media screen and (max-width: 1024px)
+{
+
+  .container
+  {
+    background-color: purple;
+  }
+
+  h1
+  {
+    color: yellow;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    background-color: blue;
+  }
+  h1 {
+    color: white;
+  }
+  
+}
+
+
+/* Mix min-width max-width */
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  h1 {
+    text-align: center;
+  }
+}
