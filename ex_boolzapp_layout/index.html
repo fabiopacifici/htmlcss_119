@@ -13,15 +13,49 @@
       box-sizing: border-box;
     }
 
-
+    :root {
+      --bz-blocks-height: 70px;
+      --bz-primary: #333;
+    }
     .debug * {
       border: 1px dashed black;
     }
 
+    .debug {
+      .user_profile {
+        background-color: palevioletred;
+      }
+      .notifications {
+        background-color: palegreen;
+      }
+      .search {
+        background-color: palegoldenrod;
+      }
+      .contacts_list {
+        background-color: paleturquoise;
+      }
+
+
+      .contact_profile {
+        background-color: palevioletred;
+      }
+      .chat {
+        background-color: deepskyblue;
+
+        > div {
+           width: 300px;
+        }
+      }
+      .prompt {
+        background-color: deeppink;
+      }
+    }
+
+
 
     body {
       height: 100vh;
-      background-image: linear-gradient(to bottom, rgb(0, 181, 147) 0%, rgb(0, 181, 147) 120px, lightgray 120px, lightgray 100%);
+      background-color: var(--bz-primary);
       overflow: hidden;
     }
 
@@ -42,13 +76,13 @@
         height: 100%;
 
 
-        
-        & > div:not(:nth-child(4)) {
-          height: 70px;
+
+        &>div:not(:nth-child(4)) {
+          height: var(--bz-blocks-height);
         }
 
-        & > :nth-child(4) {
-          height: calc(100% - 210px);
+        &> :nth-child(4) {
+          height: calc(100% - (var(--bz-blocks-height) * 3) );
           overflow-y: scroll;
         }
 
@@ -57,11 +91,12 @@
         @media screen and (max-width: 991px) {
           width: 120px;
 
-          & > .notifications, & > .search {
+          &>.notifications,
+          &>.search {
             display: none;
           }
 
-          & > .contacts_list {
+          &>.contacts_list {
             height: calc(100% - 70px);
           }
         }
@@ -76,6 +111,35 @@
 
       .right {
         flex-grow: 1;
+
+
+        >.contact_profile,
+        >.prompt {
+          height: 70px;
+        }
+
+        >.chat {
+          height: calc(100% - 140px);
+          overflow-y: scroll;
+          display: flex;
+          flex-direction: column;
+          padding: 2rem;
+          
+          &>div {
+            min-height: 140px;
+          }
+
+          >.sent {
+            align-self: flex-end;
+          }
+
+          >.received {
+            align-self: flex-start;
+          }
+
+        }
+
+
       }
 
     }
@@ -99,7 +163,22 @@
       <!-- /.contacts_list -->
 
     </div>
-    <div class="right"></div>
+    <div class="right">
+      <div class="contact_profile"></div>
+      <!-- /.contact_profile -->
+      <div class="chat">
+
+
+        <div class="sent"></div>
+        <!-- /.sent -->
+        <div class="received"></div>
+        <!-- /.received -->
+
+      </div>
+      <!-- /.chat -->
+      <div class="prompt"></div>
+      <!-- /.prompt -->
+    </div>
   </div>
 
 </body>
