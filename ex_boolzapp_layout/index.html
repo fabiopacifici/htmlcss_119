@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boolzapp layout</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    .debug * {
+      border: 1px dashed black;
+    }
+
+
+    body {
+      height: 100vh;
+      background-image: linear-gradient(to bottom, rgb(0, 181, 147) 0%, rgb(0, 181, 147) 120px, lightgray 120px, lightgray 100%);
+      overflow: hidden;
+    }
+
+    #app {
+      height: 95vh;
+      margin: 1rem auto 2rem;
+      max-width: 1200px;
+      display: flex;
+
+      .left {
+        width: 320px;
+        height: 100%;
+
+
+        @media screen and (max-width: 991px) {
+          width: 120px;
+        }
+
+        @media screen and (max-width: 540px) {
+          display: none;
+        }
+
+
+
+
+      }
+
+      .right {
+        flex-grow: 1;
+      }
+
+    }
+  </style>
+
+</head>
+
+<body class="debug">
+
+
+
+  <div id="app">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+
+</body>
+
+</html>
