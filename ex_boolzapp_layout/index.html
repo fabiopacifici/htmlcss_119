@@ -31,19 +31,44 @@
       max-width: 1200px;
       display: flex;
 
+      @media (max-width: 991px) {
+        height: 100%;
+        margin: 0;
+      }
+
+
       .left {
         width: 320px;
         height: 100%;
 
 
+        
+        & > div:not(:nth-child(4)) {
+          height: 70px;
+        }
+
+        & > :nth-child(4) {
+          height: calc(100% - 210px);
+          overflow-y: scroll;
+        }
+
+
+
         @media screen and (max-width: 991px) {
           width: 120px;
+
+          & > .notifications, & > .search {
+            display: none;
+          }
+
+          & > .contacts_list {
+            height: calc(100% - 70px);
+          }
         }
 
         @media screen and (max-width: 540px) {
           display: none;
         }
-
 
 
 
@@ -63,7 +88,17 @@
 
 
   <div id="app">
-    <div class="left"></div>
+    <div class="left">
+      <div class="user_profile"></div>
+      <!-- /.user_profile -->
+      <div class="notifications"></div>
+      <!-- /.notifications -->
+      <div class="search"></div>
+      <!-- /.search -->
+      <div class="contacts_list"></div>
+      <!-- /.contacts_list -->
+
+    </div>
     <div class="right"></div>
   </div>
 
