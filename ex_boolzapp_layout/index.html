@@ -5,146 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Boolzapp layout</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    :root {
-      --bz-blocks-height: 70px;
-      --bz-primary: #333;
-    }
-    .debug * {
-      border: 1px dashed black;
-    }
-
-    .debug {
-      .user_profile {
-        background-color: palevioletred;
-      }
-      .notifications {
-        background-color: palegreen;
-      }
-      .search {
-        background-color: palegoldenrod;
-      }
-      .contacts_list {
-        background-color: paleturquoise;
-      }
-
-
-      .contact_profile {
-        background-color: palevioletred;
-      }
-      .chat {
-        background-color: deepskyblue;
-
-        > div {
-           width: 300px;
-        }
-      }
-      .prompt {
-        background-color: deeppink;
-      }
-    }
-
-
-
-    body {
-      height: 100vh;
-      background-color: var(--bz-primary);
-      overflow: hidden;
-    }
-
-    #app {
-      height: 95vh;
-      margin: 1rem auto 2rem;
-      max-width: 1200px;
-      display: flex;
-
-      @media (max-width: 991px) {
-        height: 100%;
-        margin: 0;
-      }
-
-
-      .left {
-        width: 320px;
-        height: 100%;
-
-
-
-        &>div:not(:nth-child(4)) {
-          height: var(--bz-blocks-height);
-        }
-
-        &> :nth-child(4) {
-          height: calc(100% - (var(--bz-blocks-height) * 3) );
-          overflow-y: scroll;
-        }
-
-
-
-        @media screen and (max-width: 991px) {
-          width: 120px;
-
-          &>.notifications,
-          &>.search {
-            display: none;
-          }
-
-          &>.contacts_list {
-            height: calc(100% - 70px);
-          }
-        }
-
-        @media screen and (max-width: 540px) {
-          display: none;
-        }
-
-
-
-      }
-
-      .right {
-        flex-grow: 1;
-
-
-        >.contact_profile,
-        >.prompt {
-          height: 70px;
-        }
-
-        >.chat {
-          height: calc(100% - 140px);
-          overflow-y: scroll;
-          display: flex;
-          flex-direction: column;
-          padding: 2rem;
-          
-          &>div {
-            min-height: 140px;
-          }
-
-          >.sent {
-            align-self: flex-end;
-          }
-
-          >.received {
-            align-self: flex-start;
-          }
-
-        }
-
-
-      }
-
-    }
-  </style>
-
+  <link rel="stylesheet" href="./style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous' referrerpolicy='no-referrer' />
 </head>
 
 <body class="debug">
@@ -153,7 +15,14 @@
 
   <div id="app">
     <div class="left">
-      <div class="user_profile"></div>
+      <div class="user_profile">
+        <img height="50" src="./img/avatar_io.jpg" alt="">
+        <div class="actions">
+          <i class="fas fa-circle-notch"></i>
+          <i class="fas fa-comment"></i>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </div>
       <!-- /.user_profile -->
       <div class="notifications"></div>
       <!-- /.notifications -->
