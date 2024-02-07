@@ -13,6 +13,7 @@
     --bz-secondary: gray;
     --bz-light: lightgray;
     --bz-lighter: white;
+    --bz-prompt-bg: rgb(255, 241, 169);
   }
 
   .debug *
@@ -268,6 +269,32 @@
         > .received
         {
           align-self: flex-start;
+        }
+
+      }
+
+
+      > .prompt {
+        display: flex;
+        background-color: var(--bz-prompt-bg);
+
+        .reactions, .action {
+          width: 70px;
+          text-align: center;
+          line-height: 70px;
+          font-size: 1.5rem;
+        }
+        .message {
+          flex-grow: 1;
+          display: flex;
+          align-items: center;
+          > input {
+            height: 55px;
+            border-radius: 0.5rem;
+            border: none;
+            width: 100%;
+            padding: 0 1rem;
+          }
         }
 
       }
