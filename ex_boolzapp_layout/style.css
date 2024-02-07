@@ -96,7 +96,7 @@
       & > :nth-child(4)
       {
         height: calc(100% - (var(--bz-blocks-height) * 3));
-        overflow-y: scroll;
+        overflow-y: auto;
       }
 
       .user_profile
@@ -185,6 +185,35 @@
         }
       }
 
+
+      .contacts_list {
+        > .contact, .meta {
+          display: flex;
+        }
+        > .contact {
+          padding: 1rem;
+          gap: 1rem;  
+
+          > img {
+            border-radius: 50%;
+          }
+        }
+
+        .meta {
+          flex-grow: 1;
+          justify-content: space-between;
+
+          @media(max-width:991px){
+            display: none;
+          }
+        }
+      
+      }
+
+
+
+
+
       @media screen and (max-width: 991px)
       {
         width: 120px;
@@ -221,7 +250,7 @@
       > .chat
       {
         height: calc(100% - 140px);
-        overflow-y: scroll;
+        overflow-y: auto;
         display: flex;
         flex-direction: column;
         padding: 2rem;
