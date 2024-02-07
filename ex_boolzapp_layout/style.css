@@ -9,8 +9,10 @@
   {
     --bz-blocks-height: 70px;
     --bz-primary: #333;
+    --bz-notifications-bg: deepskyblue;
     --bz-secondary: gray;
     --bz-light: lightgray;
+    --bz-lighter: white;
   }
 
   .debug *
@@ -83,7 +85,7 @@
 
     .left
     {
-      width: 320px;
+      width: 380px;
       height: 100%;
 
       & > div:not(:nth-child(4))
@@ -119,7 +121,27 @@
 
       }
 
+      .notifications{
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        align-items: center;
+        background-color: var(--bz-notifications-bg);
+        > .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50px;
+          aspect-ratio: 1;
+          background-color: var(--bz-lighter);
+          border-radius: 50%;
+          color: var(--bz-notifications-bg);
+        }
 
+        & a {
+          color: var(--bz-secondary);
+        }
+      }
 
 
       @media screen and (max-width: 991px)
