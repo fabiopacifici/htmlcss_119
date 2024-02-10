@@ -39,7 +39,14 @@
       <div class="search">
         <div class="box">
           <i class="fas fa-search"></i>
-          <input type="text" placeholder="Cerca i inizia una nuova chat">
+          <form action="" method="get">
+            <input name="search" type="search" placeholder="Cerca i inizia una nuova chat">
+            <!--           <input type="submit" value="😀 Click me"/>
+
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button> -->
+          </form>
         </div>
       </div>
       <!-- /.search -->
@@ -155,21 +162,56 @@
 
     </div>
     <div class="right">
-      <div class="contact_profile"></div>
+      <div class="contact_profile">
+        <div class="profile_details">
+          <img height="50" src="./img/avatar_1.jpg" alt="">
+          <div>
+            <h3>Michiele</h3>
+            <div>Ultimo accesso oggi alle 16:26</div>
+          </div>
+        </div>
+        <div class="actions">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-paperclip"></i>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+
+      </div>
       <!-- /.contact_profile -->
       <div class="chat">
 
 
-        <div class="sent"></div>
+        <div class="sent">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, possimus vitae animi nostrum voluptatem
+              praesentium a ipsum dolore ad quaerat, adipisci reprehenderit eius accusantium exercitationem sequi. Quis
+              temporibus dolorum fugiat?
+            </p>
+            <i class="fas fa-chevron-down fa-sm fa-fw"></i>
+          </div>
+          <div class="time">16:00</div>
+        </div>
         <!-- /.sent -->
-        <div class="received"></div>
+        <div class="received">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, possimus vitae animi nostrum voluptatem
+              praesentium a ipsum dolore ad quaerat, adipisci reprehenderit eius accusantium exercitationem sequi. Quis
+              temporibus dolorum fugiat?
+            </p>
+            <i class="fas fa-chevron-down fa-sm fa-fw"></i>
+          </div>
+          <div class="time">16:00</div>
+
+        </div>
         <!-- /.received -->
 
       </div>
       <!-- /.chat -->
       <div class="prompt">
         <div class="reactions">
-          <i class="far fa-smile    "></i>
+          <i class="far fa-smile"></i>
         </div>
         <div class="message">
           <input type="text" placeholder="Scrivi un messaggio">
