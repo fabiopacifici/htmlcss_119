@@ -8,59 +8,16 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-  <style>
-    :root {
-      --fr-primary: rgba(27, 189, 156, 1);
-      --fr-darker: rgba(45, 62, 81, 1);
-      --fr-dark: rgba(58, 84, 109, 1);
-    }
-
-
-    .debug * {
-      border: 1px dashed;
-    }
-
-    .debug .container {
-      min-height: 400px;
-      background-color: orange;
-    }
-
-    .debug .jumbotron {
-      height: 450px;
-    }
-
-    .debug [class^="col"] {
-      min-height: 200px;
-
-    }
-
-    /*Utilities*/
-    .bg_primary {
-      background-color: var(--fr-primary);
-    }
-
-    .bg_darker {
-      background-color: var(--fr-darker);
-    }
-
-    /*Header*/
-    header {}
-
-    /*Main
-    .jumbotron, .about {
-      background-color: var(--fr-primary);
-
-    }*/
-  </style>
-
-
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css'
+    integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=='
+    crossorigin='anonymous' referrerpolicy='no-referrer' />
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body class="">
 
   <header>
-    <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <nav class="navbar navbar-expand-md navbar-dark">
       <div class="container">
         <a class="navbar-brand text-uppercase" href="#">Start Bootstrap</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -70,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -85,70 +42,152 @@
     </nav>
   </header>
   <main>
-    <section class="jumbotron bg_primary">
-      
-        <div class="container">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nostrum, aut aliquam sit, quam blanditiis voluptates quasi ea at animi saepe non placeat. Tempora, ipsam beatae pariatur quia quos optio!</p>
+    <div class="jumbotron p-5 mb-4 bg_primary text-white rounded-0">
+      <div class="container-fluid py-5 text-center">
+        <img class="img-fluid" width="200" src="./assets/img/avatar.svg" alt="">
+        <h1 class="display-5 fw-bold text-uppercase">Start Bootstrap</h1>
+
+        <div class="star_divider">
+          <i class="fa fa-star fa-2x" aria-hidden="true"></i>
         </div>
-    </section>
+
+        <p class="col-md-8 fs-4 mx-auto">
+          Using a series of utilities, you can create this jumbotron, just
+          like the one in previous versions of Bootstrap. Check out the
+          examples below for how you can remix and restyle it to your liking.
+        </p>
+
+      </div>
+    </div>
     <!-- /.jumbotron -->
     <div class="portfolio py-5">
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <h2 class="text-uppercase text-center fw-bold">Portfolio</h2>
+        <div class="star_divider mb-3 mt-2">
+          <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
           <div class="col">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est beatae eos provident alias ea eius
-            aperiam illum, at perspiciatis adipisci dolores temporibus accusantium molestiae corporis blanditiis
-            laudantium commodi quia.
+            <div class="card position-relative">
+              <img src="./assets/img/cabin.png" class="rounded" alt="...">
+              <div
+                class="overlay position-absolute d-flex align-items-center justify-content-center top-50 left-50 w-100 text-center text-white fs-1 translate-middle-x translate-middle-y bg_primary_transparent h-100 rounded">
+                +</div>
+            </div>
           </div>
           <div class="col">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est beatae eos provident alias ea eius
-            aperiam illum,
-            at perspiciatis adipisci dolores temporibus accusantium molestiae corporis blanditiis laudantium commodi
-            quia.
+            <div class="card position-relative">
+              <img src="./assets/img/cake.png" class="rounded" alt="...">
+              <div
+                class="overlay position-absolute d-flex align-items-center justify-content-center top-50 left-50 w-100 text-center text-white fs-1 translate-middle-x translate-middle-y bg_primary_transparent h-100 rounded">
+                +</div>
+            </div>
           </div>
           <div class="col">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est beatae eos provident alias ea eius
-            aperiam illum,
-            at perspiciatis adipisci dolores temporibus accusantium molestiae corporis blanditiis laudantium commodi
-            quia.
+            <div class="card position-relative">
+              <img src="./assets/img/circus.png" class="rounded" alt="...">
+              <div
+                class="overlay position-absolute d-flex align-items-center justify-content-center top-50 left-50 w-100 text-center text-white fs-1 translate-middle-x translate-middle-y bg_primary_transparent h-100 rounded">
+                +</div>
+            </div>
           </div>
           <div class="col">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est beatae eos provident alias ea eius
-            aperiam illum,
-            at perspiciatis adipisci dolores temporibus accusantium molestiae corporis blanditiis laudantium commodi
-            quia.
+            <div class="card position-relative">
+              <img src="./assets/img/submarine.png" class="rounded" alt="...">
+              <div
+                class="overlay position-absolute d-flex align-items-center justify-content-center top-50 left-50 w-100 text-center text-white fs-1 translate-middle-x translate-middle-y bg_primary_transparent h-100 rounded">
+                +</div>
+            </div>
           </div>
           <div class="col">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est beatae eos provident alias ea eius
-            aperiam illum,
-            at perspiciatis adipisci dolores temporibus accusantium molestiae corporis blanditiis laudantium commodi
-            quia.
+            <div class="card position-relative">
+              <img src="./assets/img/game.png" class="rounded" alt="...">
+              <div
+                class="overlay position-absolute d-flex align-items-center justify-content-center top-50 left-50 w-100 text-center text-white fs-1 translate-middle-x translate-middle-y bg_primary_transparent h-100 rounded">
+                +</div>
+            </div>
           </div>
           <div class="col">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est beatae eos provident alias ea eius
-            aperiam illum,
-            at perspiciatis adipisci dolores temporibus accusantium molestiae corporis blanditiis laudantium commodi
-            quia.
+            <div class="card position-relative">
+              <img src="./assets/img/safe.png" class="rounded" alt="...">
+              <div
+                class="overlay position-absolute d-flex align-items-center justify-content-center top-50 left-50 w-100 text-center text-white fs-1 translate-middle-x translate-middle-y bg_primary_transparent h-100 rounded">
+                +</div>
+            </div>
           </div>
+
         </div>
       </div>
 
     </div>
     <!-- /.portfolio -->
     <div class="about bg_primary py-5">
-      <div class="container px-5">
+      <div class="container w-75 mx-auto text-white">
+        <h2 class="text-uppercase text-center fw-bold">About</h2>
+        <div class="star_divider mb-3 mt-2">
+          <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+        </div>
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col"></div>
-          <div class="col"></div>
+          <div class="col">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolores nemo maxime quam, earum quibusdam
+            eligendi architecto cupiditate obcaecati esse dignissimos voluptatibus ullam. Ratione aspernatur sint
+            laudantium, sit quis enim!
+          </div>
+          <div class="col">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laborum nihil dolorem voluptatem ipsam
+            neque ullam fugiat similique ex excepturi ab reiciendis vero dolorum autem tenetur, eaque accusantium
+            veritatis. A.
+          </div>
+        </div>
+
+        <div class="call_to_action text-center mt-4">
+          <a class="btn btn-outline-light"> <i class="fa fa-download" aria-hidden="true"></i> Download</a>
+
         </div>
       </div>
     </div>
     <!-- /.about -->
-    <div class="contacts">
-     
+    <div class="contacts py-5">
+
       <div class="container">
+        <h2 class="text-uppercase text-center fw-bold">Contact Me</h2>
+        <div class="star_divider mb-3 mt-2">
+          <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+        </div>
         <div class="w-75 mx-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse numquam consequatur consequuntur maxime laborum necessitatibus, facere ullam adipisci facilis quibusdam minus corporis, ex praesentium repellat voluptatem eum aut quasi iure!
+
+          <form action="" method="post">
+
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control border-0 border-bottom rounded-0" name="name" id="name"
+                placeholder="" />
+              <label for="name">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control border-0 border-bottom rounded-0" name="name" id="name"
+                placeholder="" />
+              <label for="name">Email Address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="number" class="form-control border-0 border-bottom rounded-0" name="name" id="name"
+                placeholder="" />
+              <label for="name">Phone Number</label>
+            </div>
+            <div class="form-floating">
+              <textarea class="form-control border-0 border-bottom rounded-0" placeholder="Leave a comment here"
+                id="floatingTextarea" style="height: 200px;"></textarea>
+              <label for="floatingTextarea">Message</label>
+            </div>
+
+            <button type="submit" class="bg_primary text-white rounded-1 border-0 d-inline-block p-2 my-3">
+              Submit
+            </button>
+
+          </form>
+
+
+
+
         </div>
       </div>
 
@@ -168,25 +207,46 @@
     <!-- /.contacts -->
   </main>
 
-  <footer class="py-5 bg_darker">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-md-2">
-        <div class="col">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aut qui eos recusandae aliquid doloribus.
-          Expedita, error corporis, accusamus, illum facilis quaerat explicabo voluptatum quidem dolorem atque odio
-          eius! Culpa?
+  <footer class="bg_darker text-white">
+    <div class="container py-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col text-center">
+          <h4 class="text-uppercase fw-normal">Location</h4>
+          <address>
+            2215 John Daniel Drive Clark, MO <br>
+            54243
+          </address>
         </div>
-        <div class="col">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aut qui eos recusandae aliquid doloribus.
-          Expedita,
-          error corporis, accusamus, illum facilis quaerat explicabo voluptatum quidem dolorem atque odio eius! Culpa?
+        <div class="col text-center">
+          <h4 class="text-uppercase fw-normal">Around the web</h4>
+          <div class="socials d-flex gap-2 justify-content-center">
+            <a href="">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-youtube" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-google" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+
+          </div>
         </div>
-        <div class="col">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aut qui eos recusandae aliquid doloribus.
-          Expedita,
-          error corporis, accusamus, illum facilis quaerat explicabo voluptatum quidem dolorem atque odio eius! Culpa?
+        <div class="col text-center">
+          <h4 class="text-uppercase fw-normal">About Freelancer</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aliquam by <a href="">Start
+              Bootstrap</a></p>
         </div>
       </div>
+    </div>
+    <div class="bottom py-3 text-center" style="background-color: var(--fr-dark);">
+      <p>
+        Copyright <i class="fa fa-copyright" aria-hidden="true"></i>
+        Boolean 2024
+      </p>
     </div>
   </footer>
 

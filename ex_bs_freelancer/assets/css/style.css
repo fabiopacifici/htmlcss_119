@@ -1,0 +1,193 @@
+    :root
+    {
+      --fr-primary: rgba(27, 189, 156, 1);
+      --fr-primary-50: rgba(27, 189, 156, 0.5);
+      --fr-darker: rgba(45, 62, 81, 1);
+      --fr-dark: rgba(58, 84, 109, 1);
+    }
+
+    .debug *
+    {
+      border: 1px dashed;
+    }
+
+    .debug .container
+    {
+      min-height: 400px;
+      background-color: orange;
+    }
+
+    .debug .jumbotron
+    {
+      height: 450px;
+    }
+
+    .debug [class^="col"]
+    {
+      min-height: 200px;
+
+    }
+
+    /*Utilities*/
+    .bg_primary
+    {
+      background-color: var(--fr-primary);
+    }
+
+    .bg_primary_transparent
+    {
+      background-color: var(--fr-primary-50);
+    }
+
+    .bg_darker
+    {
+      background-color: var(--fr-darker);
+    }
+
+    /*Header*/
+    header
+    {
+      .navbar-brand
+      {
+        font-weight: 700;
+      }
+
+      & nav
+      {
+        background-color: var(--fr-darker);
+
+        & a.nav-link
+        {
+          color: white;
+          font-weight: 500;
+          text-transform: uppercase;
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .star_divider
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem 0;
+
+      > i
+      {
+        animation: shake;
+        animation-duration: 2s;
+      }
+
+      &::before,
+      &::after
+      {
+        content: '';
+        display: inline-block;
+        background-color: black;
+        width: 120px;
+        height: 3px;
+        animation-name: expand;
+        animation-duration: 1s;
+      }
+
+    }
+
+    @keyframes shake
+    {
+      from
+      {
+        rotate: 0deg;
+      }
+
+      to
+      {
+        rotate: 360deg;
+      }
+    }
+
+    @keyframes expand
+    {
+
+      0%
+      {
+        width: 0;
+      }
+
+      to
+      {
+        width: 120px
+      }
+    }
+
+    /* Main*/
+    .portfolio
+    {
+
+      .card
+      {
+        overflow: hidden;
+
+        > img
+        {
+          transition: all 1s;
+
+        }
+      }
+
+      .card:hover img
+      {
+        transform: scale(1.2);
+      }
+
+      .card:hover .overlay
+      {
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      .overlay
+      {
+        opacity: 0;
+        transition: all 0.5s;
+
+      }
+    }
+
+    .jumbotron,
+    .about
+    {
+
+      .star_divider::before,
+      .star_divider::after
+      {
+        background-color: white;
+      }
+    }
+
+    footer
+    {
+      .socials
+      {
+        > a
+        {
+          width: 40px;
+          height: 40px;
+          border: 1px solid white;
+          line-height: 40px;
+          text-align: center;
+          border-radius: 50%;
+          color: white;
+        }
+      }
+
+      & p
+      {
+        > a
+        {
+          color: var(--fr-primary);
+          text-decoration: none;
+        }
+      }
+    }
