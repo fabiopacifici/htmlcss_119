@@ -44,28 +44,6 @@
       background-color: var(--fr-darker);
     }
 
-    /*Header*/
-    header
-    {
-      .navbar-brand
-      {
-        font-weight: 700;
-      }
-
-      & nav
-      {
-        background-color: var(--fr-darker);
-
-        & a.nav-link
-        {
-          color: white;
-          font-weight: 500;
-          text-transform: uppercase;
-          font-size: 0.9rem;
-        }
-      }
-    }
-
     .star_divider
     {
       display: flex;
@@ -121,7 +99,40 @@
       }
     }
 
+    /*Header*/
+    header
+    {
+      .navbar-brand
+      {
+        font-weight: 700;
+      }
+
+      & nav
+      {
+        background-color: var(--fr-darker);
+
+        & a.nav-link
+        {
+          color: white;
+          font-weight: 500;
+          text-transform: uppercase;
+          font-size: 0.9rem;
+        }
+      }
+    }
+
     /* Main*/
+    .jumbotron,
+    .about
+    {
+
+      .star_divider::before,
+      .star_divider::after
+      {
+        background-color: white;
+      }
+    }
+
     .portfolio
     {
 
@@ -155,17 +166,6 @@
       }
     }
 
-    .jumbotron,
-    .about
-    {
-
-      .star_divider::before,
-      .star_divider::after
-      {
-        background-color: white;
-      }
-    }
-
     footer
     {
       .socials
@@ -191,3 +191,5 @@
         }
       }
     }
+
+    

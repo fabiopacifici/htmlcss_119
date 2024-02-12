@@ -42,7 +42,7 @@
     </nav>
   </header>
   <main>
-    <div class="jumbotron p-5 mb-4 bg_primary text-white rounded-0">
+    <section class="jumbotron p-5 mb-4 bg_primary text-white rounded-0">
       <div class="container-fluid py-5 text-center">
         <img class="img-fluid" width="200" src="./assets/img/avatar.svg" alt="">
         <h1 class="display-5 fw-bold text-uppercase">Start Bootstrap</h1>
@@ -58,9 +58,9 @@
         </p>
 
       </div>
-    </div>
+    </section>
     <!-- /.jumbotron -->
-    <div class="portfolio py-5">
+    <section class="portfolio py-5">
       <div class="container">
         <h2 class="text-uppercase text-center fw-bold">Portfolio</h2>
         <div class="star_divider mb-3 mt-2">
@@ -119,9 +119,9 @@
         </div>
       </div>
 
-    </div>
+    </section>
     <!-- /.portfolio -->
-    <div class="about bg_primary py-5">
+    <section class="about bg_primary py-5">
       <div class="container w-75 mx-auto text-white">
         <h2 class="text-uppercase text-center fw-bold">About</h2>
         <div class="star_divider mb-3 mt-2">
@@ -145,9 +145,9 @@
 
         </div>
       </div>
-    </div>
+    </section>
     <!-- /.about -->
-    <div class="contacts py-5">
+    <section class="contacts py-5">
 
       <div class="container">
         <h2 class="text-uppercase text-center fw-bold">Contact Me</h2>
@@ -160,23 +160,23 @@
 
             <div class="form-floating mb-3">
               <input type="text" class="form-control border-0 border-bottom rounded-0" name="name" id="name"
-                placeholder="" />
+                placeholder="" autocomplete="name" />
               <label for="name">Name</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="email" class="form-control border-0 border-bottom rounded-0" name="name" id="name"
-                placeholder="" />
-              <label for="name">Email Address</label>
+              <input type="email" class="form-control border-0 border-bottom rounded-0" name="email" id="email"
+                placeholder="" autocomplete="email" />
+              <label for="email">Email Address</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="number" class="form-control border-0 border-bottom rounded-0" name="name" id="name"
-                placeholder="" />
-              <label for="name">Phone Number</label>
+              <input type="number" class="form-control border-0 border-bottom rounded-0" name="phone" id="phone"
+                placeholder="" autocomplete="tel" />
+              <label for="phone">Phone Number</label>
             </div>
             <div class="form-floating">
               <textarea class="form-control border-0 border-bottom rounded-0" placeholder="Leave a comment here"
-                id="floatingTextarea" style="height: 200px;"></textarea>
-              <label for="floatingTextarea">Message</label>
+                id="message" style="height: 200px;"></textarea>
+              <label for="message">Message</label>
             </div>
 
             <button type="submit" class="bg_primary text-white rounded-1 border-0 d-inline-block p-2 my-3">
@@ -203,7 +203,7 @@
       </div>
 
 
-    </div>
+    </section>
     <!-- /.contacts -->
   </main>
 
