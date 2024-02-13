@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <title>Hello world</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css'
+    integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=='
+    crossorigin='anonymous' referrerpolicy='no-referrer' />
+  
+  
+  
+    <style>
+
+      * {
+        border: 1px dashed
+      }
+    </style>
+  
+  </head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" aria-current="page">Home
+              <span class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <!-- Menu dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="fa fa-bell text-warning" aria-hidden="true"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Action 1</a>
+              <a class="dropdown-item" href="#">Action 2</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <main>
+    <div class="banner">
+      <button class="btn text-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#add_students"
+        aria-controls="add_students">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </button>
+    </div>
+  </main>
+
+
+
+
+
+
+  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="add_students"
+    aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="staticBackdropLabel">
+        Offcanvas
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>I will not close if you click outside of me.</div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

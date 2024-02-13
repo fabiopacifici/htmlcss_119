@@ -1,0 +1,76 @@
+*
+{
+  border: 1px dashed;
+}
+
+body
+{
+  height: 100vh;
+  overflow: hidden;
+}
+
+.debug
+{
+
+  & header
+  {
+    background-color: palegoldenrod;
+    height: 70px;
+  }
+
+  & [class^="col-"] {
+    min-height: 200px;
+  }
+
+
+}
+
+/* Header */
+/* Wrapper */
+#wrapper
+{
+  height: calc(100% - 70px);
+
+  .sidebar
+  {
+    width: 70px;
+    flex-shrink: 0;
+
+  }
+
+  & main
+  {
+    flex-grow: 1;
+    overflow-y: auto;
+    .banner {
+      background-color: royalblue;
+      min-height: 100px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px)
+{
+
+  #wrapper
+  {
+
+    .sidebar
+    {
+      width: 148px;
+
+    }
+  }
+}
+
+/* 
+@media screen and (max-width: 1199px) {
+  .sidebar {
+    width: 70px;
+  }
+} */
+
+
+.navbar {
+  
+}
